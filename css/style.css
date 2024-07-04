@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --color-primario:#58A399;
+    --color-secundario:#E2F4C5;
+    --color-terciario:#496989;
+    --color-hoverbutton: #8dc0b9;
+    --color-hoverlink:#65829e;
+
+    --fuente-monstserrat:'Montserrat', sans serif;
+    --fuente-krona: "Krona One", sans-serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: var(--color-primario);
+    
+}
+.header{
+    padding: 2% 0% 0% 15%;
+}
+.header__menu{
+    display: flex;
+
+    gap: 80px;
+
+}
+.header__menu__link{
+    font-family: var(--fuente-monstserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+}
+.header__menu__link:hover{
+    color: var(--color-hoverlink);
+}
+.presentacion{
+    display: flex;
+    align-items: center;
+    padding: 5% 15% ;
+    justify-content: space-between;
+    gap: 82px;
+}
+.presentacion_contenid{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.presentacion__contenido__titulo{
+    color: var(--color-secundario);
+    font-size: 2.25rem; /*tomaño de la fuente*/ 
+    font-family: var(--fuente-krona);
+}
+.titulo-destaque{
+    color: var(--color-terciario);
+}
+.presentacion__contenido__texto{
+    color: var(--color-secundario);
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-family: var(--fuente-monstserrat);
+}
+.link-ig{
+    background: var(--color-terciario);
+    color: var(--color-secundario);
+}
+.link-github{
+    background: var(--color-terciario);
+    color: var(--color-secundario);
+}
+.presentacion__enlace{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.presentacion__enlace__link{
+        width: 50%; /*W*/
+        text-align: center;
+        padding: 21.5px 0;
+        border-radius: 8px;
+        font-family: var(--fuente-monstserrat);
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-decoration: none;
+        color: var(--color-secundario);
+        border: 2px solid var(--color-terciario);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+}
+.presentacion__enlace__link:hover{
+    background-color: var(--color-hoverbutton);
+    /*padding: 4%; EN DESARROLLO*/
+}
+
+.presentacion__enlace__subtitulos{
+    font-family: var(--fuente-krona);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.icon__linkedin{
+    width: 35px;
+}
+.icon__github{
+    width: 35px;
+}
+.imagen__ebert{
+   /* width: 300px;
+    height: 300px;*/
+    border-radius: 50%; /* Esto hace que el borde sea redondeado */
+   border: 5px solid var(--color-hover); /* Cambia el color y el grosor del borde según tus preferencias */
+    /*object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor redondeado */
+    width: 50%;
+}
+.footer{
+    background-color: var(--color-terciario);
+    padding: 1.5rem;
+    text-align: center;
+    color: #8dc0b9;
+    font-family: var(--fuente-monstserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1023px){
+    .header{
+        padding: 10%;
+    }
+    .header__menu{
+        justify-content: center;
+    }
+   .presentacion{
+    flex-direction: column-reverse;
+    padding: 5%;
+   } 
+   .presentacion__contenido{
+    width: 100%;
+   }
+   footer{
+    width: auto;
+   }
+   .presentacion__enlace__link{
+    width: 100%;
+   }
+}
