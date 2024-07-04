@@ -4,7 +4,7 @@
     --color-primario:#58A399;
     --color-secundario:#E2F4C5;
     --color-terciario:#496989;
-    --color-hoverbutton: #8dc0b9;
+    --color-hoverprimario: #8dc0b9;
     --color-hoverlink:#65829e;
 
     --fuente-monstserrat:'Montserrat', sans serif;
@@ -98,7 +98,7 @@ body{
         gap: 10px;
 }
 .presentacion__enlace__link:hover{
-    background-color: var(--color-hoverbutton);
+    background-color: var(--color-hoverprimario);
     /*padding: 4%; EN DESARROLLO*/
 }
 
@@ -117,7 +117,7 @@ body{
    /* width: 300px;
     height: 300px;*/
     border-radius: 50%; /* Esto hace que el borde sea redondeado */
-   border: 5px solid var(--color-hover); /* Cambia el color y el grosor del borde según tus preferencias */
+   border: 5px solid var(--color-hoverprimario); /* Cambia el color y el grosor del borde según tus preferencias */
     /*object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor redondeado */
     width: 50%;
 }
